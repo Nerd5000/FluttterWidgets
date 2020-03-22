@@ -23,7 +23,10 @@ class BlogCard extends StatelessWidget {
             child: Stack(
               alignment: Alignment.bottomRight,
               children: <Widget>[
-                img,
+                Padding(
+                  padding: EdgeInsets.all(5.0),
+                  child: img,
+                ),
                 Container(
                   decoration: BoxDecoration(
                     color: Colors.white,
