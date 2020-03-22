@@ -20,29 +20,31 @@ class BlogCard extends StatelessWidget {
         children: <Widget>[
           Expanded(
             flex: 3,
-            child: Stack(
-              alignment: Alignment.bottomRight,
-              children: <Widget>[
-                Padding(
-                  padding: EdgeInsets.all(5.0),
-                  child: img,
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(3.0),
+            child: Center(
+              child: Stack(
+                alignment: Alignment.bottomRight,
+                children: <Widget>[
+                  Padding(
+                    padding: EdgeInsets.all(5.0),
+                    child: img,
                   ),
-                  margin: EdgeInsets.fromLTRB(0.0, 0.0, 5.0, 5.0),
-                  padding: EdgeInsets.all(5),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: <Widget>[
-                      Text(views.toString()),
-                      Icon(Icons.remove_red_eye),
-                    ],
-                  ),
-                )
-              ],
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(3.0),
+                    ),
+                    margin: EdgeInsets.fromLTRB(0.0, 0.0, 10.0, 10.0),
+                    padding: EdgeInsets.all(5),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: <Widget>[
+                        Text(views.toString()),
+                        Icon(Icons.remove_red_eye),
+                      ],
+                    ),
+                  )
+                ],
+              ),
             ),
           ),
           Expanded(
